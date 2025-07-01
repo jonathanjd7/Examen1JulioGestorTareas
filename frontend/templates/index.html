@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas By Danilo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestor de Tareas By Danilo</h1>
+        
+        <!-- Formulario para añadir tareas -->
+        <form id="taskForm" class="task-form">
+            <div class="form-group">
+                <label for="title">Título:</label>
+                <input type="text" id="title" name="title" required>
+                <div id="titleError" class="error-message"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="priority">Prioridad:</label>
+                <select id="priority" name="priority" required>
+                    <option value="">Seleccionar prioridad</option>
+                    <option value="baja">Baja</option>
+                    <option value="media">Media</option>
+                    <option value="alta">Alta</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="btn-primary">Añadir Tarea</button>
+        </form>
+        
+        <!-- Filtros de prioridad -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="todas">Todas</button>
+            <button class="filter-btn" data-filter="alta">Alta</button>
+            <button class="filter-btn" data-filter="media">Media</button>
+            <button class="filter-btn" data-filter="baja">Baja</button>
+        </div>
+        
+        <!-- Lista de tareas -->
+        <div class="tasks-container">
+            <h2>Tareas</h2>
+            <ul id="taskList" class="task-list">
+                <!-- Las tareas se añadirán dinámicamente aquí -->
+            </ul>
+        </div>
+        
+        <!-- Modal de edición -->
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Editar Tarea</h3>
+                    <button id="closeModal" class="close-btn">&times;</button>
+                </div>
+                <form id="editForm" class="edit-form">
+                    <div class="form-group">
+                        <label for="editTitle">Título:</label>
+                        <input type="text" id="editTitle" name="editTitle" required>
+                        <div id="editTitleError" class="error-message"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="editPriority">Prioridad:</label>
+                        <select id="editPriority" name="editPriority" required>
+                            <option value="">Seleccionar prioridad</option>
+                            <option value="baja">Baja</option>
+                            <option value="media">Media</option>
+                            <option value="alta">Alta</option>
+                        </select>
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <button type="button" id="cancelEdit" class="btn-secondary">Cancelar</button>
+                        <button type="submit" class="btn-primary">Guardar Cambios</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html> 
