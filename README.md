@@ -122,8 +122,8 @@ gestor-tareas-by-danilo/
 ### ⚡ Instalación Automática (Recomendada)
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/tu-usuario/gestor-tareas-by-danilo.git
-cd gestor-tareas-by-danilo
+git clone https://github.com/jonathanjd7/Examen1JulioGestorTareas
+cd Examen1JulioGestorTareas
 
 # 2. Ejecutar instalador automático
 python install.py
@@ -138,8 +138,8 @@ python start_app.py
 ### 🔧 Instalación Manual
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/tu-usuario/gestor-tareas-by-danilo.git
-cd gestor-tareas-by-danilo
+git clone https://github.com/jonathanjd7/Examen1JulioGestorTareas
+cd Examen1JulioGestorTareas
 
 # 2. Crear entorno virtual
 python -m venv venv
@@ -173,8 +173,8 @@ python start_app.py
 
 1. **Clonar el repositorio**
    ```bash
-   git clone https://github.com/tu-usuario/gestor-tareas-by-danilo.git
-   cd gestor-tareas-by-danilo
+   git clone https://github.com/jonathanjd7/Examen1JulioGestorTareas
+   cd Examen1JulioGestorTareas
    ```
 
 2. **Crear entorno virtual**
@@ -356,10 +356,9 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 **Danilo** - Desarrollador Full Stack
 
-- 🌐 [Portfolio](https://tu-portfolio.com)
-- 📧 [Email](mailto:tu-email@ejemplo.com)
-- 💼 [LinkedIn](https://linkedin.com/in/tu-perfil)
-- 🐙 [GitHub](https://github.com/tu-usuario)
+- 📧 [Email] jonathanjd7@gmail.com  
+- 💼 [LinkedIn]https://www.linkedin.com/in/danilo-doicela-878300114/
+- 🐙 [GitHub] - https://github.com/jonathanjd7
 
 ---
 
